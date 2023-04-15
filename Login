@@ -1,0 +1,16 @@
+fun main() {
+    val validUsername = "Arcabachie"
+    val validPassword = "2022"
+
+    println("Please enter your username:")
+    val username = readLine()
+
+    println("Please enter your password:")
+    val password = readLine()
+
+    if (username == validUsername && password == validPassword) {
+        println("Login successful!")
+    } else {
+        println("Invalid username or password. Please try again.")
+    }
+}
