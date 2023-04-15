@@ -1,0 +1,63 @@
+fun main() {
+    println("You are alone in a dark, abandoned house. You hear strange noises coming from upstairs. What do you do?")
+
+    println("1. Investigate the noises")
+    println("2. Stay put and wait for daylight")
+
+    val choice1 = readLine()
+
+    if (choice1 == "1") {
+        println("You cautiously make your way up the stairs. Suddenly, a door slams shut behind you, trapping you in the room.")
+
+        println("1. Look for a way out")
+        println("2. Call for help on your phone")
+
+        val choice2 = readLine()
+
+        if (choice2 == "1") {
+            println("You search the room and find a hidden door. You manage to escape, but not before you hear something growling behind you.")
+            println("Game over.")
+        } else if (choice2 == "2") {
+            println("You try to call for help, but there's no signal. Suddenly, the phone rings. You answer it, but all you hear is heavy breathing on the other end.")
+            println("Game over.")
+        } else {
+            println("Invalid input. Game over.")
+        }
+
+    } else if (choice1 == "2") {
+        println("You sit in silence, waiting for daylight. But the longer you wait, the more you realize that something isn't right. The air grows colder, and you hear footsteps coming closer.")
+
+        println("1. Hide and wait for the footsteps to pass")
+        println("2. Confront the footsteps")
+
+        val choice3 = readLine()
+
+        if (choice3 == "1") {
+            println("You hide behind a nearby sofa and wait for the footsteps to pass. But they don't. Suddenly, a pair of glowing eyes appear in front of you.")
+            println("Game over.")
+        } else if (choice3 == "2") {
+            println("You confront the footsteps and find a ghostly figure. It tells you a story of how it died in the house and how it's been trapped there ever since. It asks you to help it find peace.")
+
+            println("1. Agree to help the ghost")
+            println("2. Refuse to help and try to escape")
+
+            val choice4 = readLine()
+
+            if (choice4 == "1") {
+                println("You help the ghost find peace, and it thanks you before vanishing into thin air. You manage to escape the house unscathed.")
+                println("Congratulations! You survived the horror story.")
+            } else if (choice4 == "2") {
+                println("You refuse to help the ghost and try to escape. But as you make your way to the door, you feel a cold hand on your shoulder.")
+                println("Game over.")
+            } else {
+                println("Invalid input. Game over.")
+            }
+
+        } else {
+            println("Invalid input. Game over.")
+        }
+
+    } else {
+        println("Invalid input. Game over.")
+    }
+}
